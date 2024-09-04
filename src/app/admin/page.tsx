@@ -10,7 +10,6 @@ const getSalesData = async () => {
             _sum: {pricePaidInRupees: true},
             _count: true
         })
-
         return {
             amount: (data._sum.pricePaidInRupees || 0),
             numberOfSales: data._count
